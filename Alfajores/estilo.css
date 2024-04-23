@@ -1,0 +1,42 @@
+
+footer
+{
+    background-color: orange;
+    text-align: center;
+}
+
+header
+{
+    background-color: aqua;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+
+article img
+{
+    width: 250px;
+    border-collapse:collapse ;
+}
+
+table,td,th
+{
+    /* PROPIEDADES */
+    /* Short Hand */
+   border: 1px solid black;
+   border-collapse:collapse ;
+   /* codigo largo */
+   /* border-width: 1px;
+   border-color: solid;
+   border-style: black; */
+
+   /* son los dos exactamente lo mismo */
+}
+
+td,th{
+    text-align: center;
+}
+
