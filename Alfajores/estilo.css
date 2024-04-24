@@ -14,7 +14,15 @@ header
 h1{
     text-align: center;
 }
-
+.Logo img
+{
+    
+    width: 200px;
+}
+.Redes img
+{
+    width: 150px;
+}
 
 article img
 {
