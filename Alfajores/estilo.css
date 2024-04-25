@@ -1,25 +1,58 @@
 
 footer
 {
-    background-color: orange;
+    background-color: lightpink;
     text-align: center;
 }
 
 header
 {
-    background-color: aqua;
+    background-color: lightpink;
     text-align: center;
 }
 
-h1{
+h1, h2{
     text-align: center;
 }
 
+.contenedor{
+    display: flex;
+}
+
+.contenedorImagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1{
+
+    width: 150px;
+    padding: 35px;
+    margin-left: 400px;
+}
+
+.div2{
+
+    width: 150px;
+    padding: 35px;
+    margin-left: 25px;
+}
+
+.Logo img
+{
+    
+    width: 200px;
+}
+.Redes img
+{
+    width: 150px;
+}
 
 article img
 {
     width: 250px;
-    border-collapse:collapse ;
+    border-collapse:collapse;
 }
 
 table,td,th
