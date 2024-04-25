@@ -1,3 +1,29 @@
+
+footer
+{
+    background-color: orange;
+    text-align: center;
+}
+
+header
+{
+    background-color: aqua;
+    text-align: center;
+}
+
+h1{
+    /* text-align: center; */
+}
+.Logo img
+{
+    
+    width: 200px;
+}
+.Redes img
+{
+    width: 150px;
+}
+
 article img
 {
     width: 250px;
