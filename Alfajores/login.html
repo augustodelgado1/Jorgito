@@ -1,70 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alfajores</title>
     <link rel="stylesheet" href="./estilo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
+
 <body>
 
-<header>
-    <h1>Jorgito</h1>
-    <nav>
-            <a href="./index.html">Inicio</a>
-            <a href="./nosotros.html">Nosotros</a>
-            <a href="./login.html">Contacto</a>
-            <a href="./sucursales.html">Sucursales</a>
-    </nav>
-</header>
+    <header style="background-color: lightpink ; text-align: center">
 
+        <center><img src="img/Jorgito.png" alt="centered image" width="300"></center>
 
+        <h1>Alfajores Jorgito</h1>
+        <nav>
+            <a href="./index.html" style="font-size: 18px;">INICIO</a>&nbsp;&nbsp;&nbsp;
+            <a href="./nosotros.html" style="font-size: 18px;">NOSOTROS</a>&nbsp;&nbsp;&nbsp;
+            <a href="./login.html" style="font-size: 18px;">CONTACTO</a>&nbsp;&nbsp;&nbsp;
+            <a href="./productos.html" style="font-size: 18px;">PRODUCTOS</a>&nbsp;&nbsp;&nbsp;
+            <a href="./sucursales.html" style="font-size: 18px;">SUCURSALES</a>
+        </nav>
 
-<section>
-    <h2>Visitanos en Nuestras Sucursales</h2>
+    </header>
 
-    <ul>
-        <li>Salcedo 3982, C1259ACB Cdad. Autónoma de Buenos Aires</li>
-        <li>Treinta y Tres Orientales 1840, Cdad. Autónoma de Buenos Aires</li>
-    </ul>
+    <section>
+        <h2>Contacte Con Nosotros</h2>
 
+        <form method="post">
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26262.34807805042!2d-58.45647038916017!3d-34.634658099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccba974ffa325%3A0x93ac780b4f65d271!2sAlfajores%20Jorgito!5e0!3m2!1ses!2sar!4v1713680018498!5m2!1ses!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <label for="txtNombre">Nombre</label>
+            <input type="text" id="txtNombre" required>
+            <br><br>
+            <label for="txtEmail">Email</label>
+            <input type="email" id="txtEmail" name="Email" required>
+            <br><br>
+            <label for="txtDni">Dni</label>
+            <input type="number" id="txtDni" required min="10000000" max="99999999">
+            <br><br>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.7766787537917!2d-58.423482124258385!3d-34.63508337294312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccba9125a813f%3A0x467717295e3a7222!2sTreinta%20y%20Tres%20Orientales%201840%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1713987197463!5m2!1ses!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <label for="txtFechaDeNacimiento">Fecha De Nacimieto</label>
+            <input type="date" id="txtFechaDeNacimiento" required>
+            <br><br>
 
-    <h3>Horarios</h3>
-    <p>12:00 AM a 18:30 PM</p>
-
-    <h4>Telefonos</h4>
-    <ul>
-        <li>011 4127-6955</li>
-        <li>011 4337-6959</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Contacte Con Nosotros</h2>
-
-    <form method="post">
-
-        <label for="txtNombre">Nombre</label>
-        <input type="text" id="txtNombre" required>
-        <br><br>
-        <label for="txtEmail">Email</label>
-        <input type="email" id="txtEmail" name="Email" required>
-        <br><br>
-        <label for="txtDni">Dni</label>
-        <input type="number" id="txtDni" required min="10000000"  max="99999999">
-        <br><br>
-
-        <label for="txtFechaDeNacimiento">Fecha De Nacimieto</label>
-        <input type="date" id="txtFechaDeNacimiento" required >
-        <br><br>
-
-        <label for="cmbNacionalidad">Nacionalidad</label>
+            <label for="cmbNacionalidad">Nacionalidad</label>
             <select id="cmbNacionalidad">
                 <option>Argentina</option>
                 <option>Peru</option>
@@ -93,13 +77,19 @@
     </div>
 
 </section>
-    
-    
-<footer>
-    <a href="https://twitter.com" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
-    <a href="https://instagram.com" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
-</footer>
 
-    
+
+    <footer style="background-color: lightpink; text-align: center;">
+        <div>
+            <a href="mailto:juanpablo@gmail.com?subject=Contacto"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://twitter.com" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <p>Derechos Reservados</p>
+    </footer>
+
+
 </body>
+
 </html>
