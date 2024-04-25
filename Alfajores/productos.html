@@ -1,90 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Jorgito</title>
     <link rel="stylesheet" href="./estilo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="img\Jorgito-alfajor-6-un.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="icon" href="logocss.ico"> -->
+    <link rel="icon" href="img/icono/LogoPrincipal.ico" type="image/x-icon">
 </head>
-<body>
-    <header>
 
-        <img src="img\Jorgito.PNG" alt="centered image" width="300">
+<body>
+
+    <header style="background-color: lightpink; text-align: center; ">
+
+        <center><img src="img/Jorgito.png" alt="centered image" width="300"></center>
+
         <h1 style="font-family:'Courier New', Courier, monospace;">Alfajores Jorgito</h1>
-        
         <nav>
-            <a href="index.html"> INICIO</a>
-            <a href="nosotros.html"> NOSOTROS</a>
-            <a href="login.html"> CONTACTO</a>
-            <a href="productos.html"> PRODUCTOS</a>
+            <a href="./index.html" style="font-size: 18px;">INICIO</a>&nbsp;&nbsp;&nbsp;
+            <a href="./nosotros.html" style="font-size: 18px;">NOSOTROS</a>&nbsp;&nbsp;&nbsp;
+            <a href="./login.html" style="font-size: 18px;">CONTACTO</a>&nbsp;&nbsp;&nbsp;
+            <a href="./productos.html" style="font-size: 18px;">PRODUCTOS</a>&nbsp;&nbsp;&nbsp;
+            <a href="./sucursales.html" style="font-size: 18px;">SUCURSALES</a>
             <a href="./noticias.html">NOTICIAS</a>
         </nav>
+
     </header>
+
+    <main>
+        <section class="Producto">
+            <h2>Tenemos variedades de productos:</h2>
     
-    <section class="Producto">
-        <h2>Tenemos variedades de productos:</h2>
-
-        <div class="contenedor">
-
-            <div class="div1">
-
-                <h2>Alfajores Chiquitos</h2>
+            <div class="contenedor">
+    
+                <div class="div1">
+    
+                    <h2>Alfajores Chiquitos</h2>
+                </div>
+    
+                <div class="div2">
+    
+                    <h2>Galletitas</h2>
+                </div>
+    
+                <div class="div2">
+    
+                    <h2>Alfajor Clasico</h2>
+                </div>
             </div>
-
-            <div class="div2">
-
-                <h2>Galletitas</h2>
-            </div>
-
-            <div class="div2">
-
-                <h2>Alfajor Clasico</h2>
-            </div>
-        </div>
-
-        <article class="contenedorImagen">
-            <a href="#"><img src="./img/cajaDeAlfajores.png" alt="Caja De Alfajores"></a> &nbsp; &nbsp; &nbsp;
-            <a href="#"> <img src="./img/galletitas.jpg" alt="Galletitas"> </a> &nbsp; &nbsp; &nbsp;
-            <a href="./Alfajores_Individuales.html"> <img src="./img/chocolate.png" alt="Alfajores Individuales"></a>
-        </article>
-    </section>
-
-    <main style="text-align: center;">
-        <h3>Aqui un video de muestra:<h3> <br>
-        <video src="img\Comercial.mp4" controls width="700" height="350" autoplay></video>
-        
+    
+            <article class="contenedorImagen">
+                <a href="#"><img src="./img/cajaDeAlfajores.png" alt="Caja De Alfajores"></a> &nbsp; &nbsp; &nbsp;
+                <a href="#"> <img src="./img/galletitas.jpg" alt="Galletitas"> </a> &nbsp; &nbsp; &nbsp;
+                <a href="./Alfajores_Individuales.html"> <img src="./img/chocolate.png" alt="Alfajores Individuales"></a>
+            </article>
+        </section>
+        <section style="text-align: center;">
+            <h3>Aqui un video de muestra:<h3> <br>
+            <video src="img\Comercial.mp4" controls width="700" height="350" autoplay></video>
+            
+        </section>
+        <section>
+            <h2 style="text-align: left;">Promociones</h2>
+    
+            <ul>
+                <li>
+                    <strong>¡Oferta Especial!</strong>
+                    <img src="./img/promocion.png">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quia dolore error odit quo eligendi nobis cum quas necessitatibus harum dolores, ratione blanditiis officia eveniet!</p>
+                    <p>Valido Hasta el <time datetime="2024-05-15">15 de mayo de 2024</time>.</p>
+                </li>
+    
+                <li>
+                    <strong>¡Oferta Especial!</strong>
+                    <img src="./img/img_promo2.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quia dolore error odit quo eligendi nobis cum quas necessitatibus harum dolores, ratione blanditiis officia eveniet!</p>
+                    <p>Valido Hasta el <time datetime="2024-05-20">20 de mayo de 2024</time>.</p>
+                </li>
+            </ul>
+        </section>
     </main>
 
-    <section>
-        <h2 style="text-align: left;">Promociones</h2>
 
-        <ul>
-            <li>
-                <strong>¡Oferta Especial!</strong>
-                <img src="./img/promocion.png">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quia dolore error odit quo eligendi nobis cum quas necessitatibus harum dolores, ratione blanditiis officia eveniet!</p>
-                <p>Valido Hasta el <time datetime="2024-05-15">15 de mayo de 2024</time>.</p>
-            </li>
 
-            <li>
-                <strong>¡Oferta Especial!</strong>
-                <img src="./img/img_promo2.jpg">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quia dolore error odit quo eligendi nobis cum quas necessitatibus harum dolores, ratione blanditiis officia eveniet!</p>
-                <p>Valido Hasta el <time datetime="2024-05-20">20 de mayo de 2024</time>.</p>
-            </li>
-        </ul>
-    </section>
-
-    <footer>
-        <div >
+    <footer style="background-color: lightpink; text-align: center;">
+        <div>
             <a href="mailto:juanpablo@gmail.com?subject=Contacto"><i class="fa-solid fa-envelope"></i></a>
             <a href="https://twitter.com" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
             <a href="https://instagram.com" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
         </div>
+
         <p>Derechos Reservados</p>
     </footer>
+
+
 </body>
+
 </html>

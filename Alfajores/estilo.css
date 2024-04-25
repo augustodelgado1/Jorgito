@@ -11,8 +11,17 @@ header
     text-align: center;
 }
 
-h1, h2{
-    text-align: center;
+h1{
+    /* text-align: center; */
+}
+.Logo img
+{
+    
+    width: 200px;
+}
+.Redes img
+{
+    width: 150px;
 }
 
 .contenedor{
@@ -37,16 +46,6 @@ h1, h2{
     width: 150px;
     padding: 35px;
     margin-left: 25px;
-}
-
-.Logo img
-{
-    
-    width: 200px;
-}
-.Redes img
-{
-    width: 150px;
 }
 
 article img
