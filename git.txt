@@ -1,0 +1,103 @@
+Buenas buenas! les dejo una guia basica de los commandos de git:
+
+
+Comandos informativos:
+
+git status
+    Muestra el estado actual del repositorio, incluyendo los archivos modificados, los nuevos archivos y los archivos eliminados.
+git log
+    Muestra el historial de commits del repositorio (no le he encontrado utilidad desde la terminal, es preferible ir a mirar a la web del repo)
+git branch
+    Te muestra las ramas del repositorio y te indica con HEAD en que rama estas posicionado
+
+Comandos de posicionamiento:
+git checkout <rama>
+    Te mueve a la rama que elijas, tengan en cuenta que las ramas no se actualizan solas cuando te moves.
+    Git no te va a permitir moverte de rama si tenes cambios sin commitear que requieran merge con la rama destino.
+    Si ambas ramas estan alineadas git te permite llevarte tus cambios sin commitear a la rama destino.
+git checkout origin/<rama>
+    Te cambia a la rama local que hayas detallado y en el proceso te hace un pull para actualizarte con los cambios remotos de la rama.
+git checkout -b <nombre-nueva-rama>
+    Crea una replica de la rama en la que estas actualmente, te posiciona en la nueva rama y arrastra los cambios sin comitear que tenias.
+
+Comandos para commits:
+
+git add <archivo>
+    Si agregaron o modificaron codigo y quieren comitearlo primero deben agregar los archivos que quieren meter en el commit.
+    Esto en proyectos de desarrollo sirve si necesitabas trabajar 2 funcionalidades en simultaneo pero te pidieron separar responsabilidades en 2 commits distintos.
+git add .
+    Si estas seguro que queres comitear todo lo que tocaste "add ." es la manera mas rapida, agrega todo al commit.
+git commit -m "mensaje"
+    Una vez que cargaron los archivos al commit deben registrarlo, agregarle un mensaje y en algunos casos agregarles un tag.
+    Recuerden que git en realidad tiene un id(hash) asignado para los commits por ej: commit 6120c6b.
+    Los mensajes y tags estan para que quienes no somos maquinas sepamos que estamos mirando.
+
+Comandos de flujo:
+
+git pull:
+    Trae a tu rama local los cambios remotos. 
+    Es mas comun referirse a esto como hacer un update de la rama.
+git push:
+    Si has hecho un commit o te has traido commits de otra rama haciendo un merge vas a que hacer un push para que esto se actualice en el remoto.
+git fetch:
+    Descarga ramas y commits del repositorio remoto al local.
+
+Restauracion de ramas:
+
+git checkout <hash_commit>
+    Te mueve al commit que detallaste, esto sirve cuando queremos revisar codigo que se extravió o dejo de funcionar en algun momento.
+    Si se realiza un push desde este commit se entiende que estas desartando los commits que esten adelante.
+git reset --hard
+    Descarta tus cambios sin commitear volviendo al estado previo de la rama.
+
+
+git rebase
+    Lo dejo de tarea para ustedes, el canal de codigo facilito tiene un video explicando la diferencia entre merge y rebase.
+    Veanlo porque se bastante claro y usa una herramienta que les puede ayudar a afianzar conceptos de git.
+
+
+
+Con todo esto ya deberian saber como moverse dentro de un proyecto sin problema.
+Sin embargo dejé afuera muchos comandos de configuracion de git.
+Igual tranquilos, nadie se los ha aprendido y siempre salen corriendo a algun foro a buscarlos.
+
+Les dejo la lista ordenada de un flujo simple de desarrollo en git:
+
+git fetch
+    para tener el repositorio local actualizado
+git status
+    para saber donde estan parados
+git checkout
+    para moverse a la rama donde desean trabajar
+git pull
+    para actualizarse su rama al ultimo commit de la rama remota
+git merge main
+    para traerse a su rama cualquier cambio nuevo de algun compañero
+
+Una vez hecho esto pueden empezar a codear, cuando terminen hacen lo siguiente:
+
+git pull
+    para actualizarse su rama al ultimo commit de la rama remota
+git status
+    para saber que archivos han modificado
+git add <archivo>
+    Lo hacen por cada archivo que quieran agregar al commit o usan la variante "add ." para ahorrar tiempo.
+git commit -m "Mensaje"
+    dejan un mensaje registrado en el commit
+
+Ahora ya tienen sus cambios guardados en un commit listo para pushear pero antes:
+
+git merge main
+    se traen los nuevos cambios de main y de ser necesario resuelven conflictos
+git status
+    les va a indicar si tienen conflictos o si la rama esta limpia
+--git commit -m "merge de main"
+    usenlo solo si el status les indico que tenian algo pendiente
+git push
+    envian sus commits y los de main a su rama remota
+
+Con esto su rama remota ya tiene todo actualizado. ahora falta enviar esto a la rama main:
+
+Este ultimo paso se hace desde la web de github. se van a su rama y les va a aparecer un cartel
+amarillo con un boton verde que indica "Crear Pull Request" (pr)
+si les indica que es posible mergear la rama le dan si a todo y listo, de lo contrario, ponganse a rezar.
