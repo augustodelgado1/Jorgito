@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jorgito</title>
+    <title>Alfajores Jorgito</title>
     <link rel="stylesheet" href="./estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+       
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+       
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="icon" href="logocss.ico"> -->
-    <link rel="icon" href="img/icono/LogoPrincipal.ico" type="image/x-icon">
+    <link rel="icon" href="img/iconos/LogoPrincipal.ico" type="image/x-icon">
 </head>
 
 <body>
 
-    <header style="background-color: lightpink; text-align: center; ">
-
-        <center><img src="img/Jorgito.png" alt="centered image" width="300"></center>
+    <header>
+        <div class="LogoPrincipal">
+            <img src="img/Logo/Jorgito.png" alt="Logo" width="300">
+        </div>
 
         <h1>Alfajores Jorgito</h1>
         <nav>
@@ -25,65 +29,102 @@
             <a href="./nosotros.html" style="font-size: 18px;">NOSOTROS</a>&nbsp;&nbsp;&nbsp;
             <a href="./login.html" style="font-size: 18px;">CONTACTO</a>&nbsp;&nbsp;&nbsp;
             <a href="./productos.html" style="font-size: 18px;">PRODUCTOS</a>&nbsp;&nbsp;&nbsp;
-            <a href="./sucursales.html" style="font-size: 18px;">SUCURSALES</a>
+            <a href="./novedades.html" style="font-size: 18px;">NOVEDADES</a>
         </nav>
 
     </header>
 
     <main>
+        <!-- <p style="font-size: 110%;"> Este alfajor es perfecto para compartir con amigos y familiares<br>
+            en cualquier momento del día. Con un peso de 50g por unidad, cada alfajor<br>
+            está relleno de un suave dulce de leche y cubierto con una capa de chocolate<br>
+            negro de alta calidad, brindándote una experiencia de sabor inigualable.<br> </p>
+        <br>
+        <img src="img/muestra.png" alt="centered image" width="320"> -->
         <section class="Producto">
             <h2>Productos</h2>
 
-            <article>
+            <div class="contenedorProductos">
+                <article>
+                    <h2>Mini Alfajores</h2>
+
+                    <div id=ProductoMiniAlfajores>
+                        <a href="./MiniAlfajores.html">
+                            <img src="./img/Productos/cajaDeAlfajores.png" 
+                            alt="Caja De Mini Alfajores">
+                        </a>
+                    </div>
+
+                </article>
 
 
-                <h2>Alfajores Chiquitos</h2>
+                <article>
+                    <h2>Galletitas</h2>
+
+                    <div id=ProductoGalletita>
+                        <a href="./Galletitas.html">
+                            <img src="./img/Productos/galletitas.jpg" 
+                            alt="Galletitas"
+                           >
+                        </a>
+                    </div>
+
+                </article>
 
 
+                <article>
+                    <h2>Alfajor Clasico</h2>
 
-                <a href="#">
-                    <img src="./img/cajaDeAlfajores.png" alt="Caja De Alfajores">
-                </a>
+                    <div id=ProductoAlfajorClasico>
+                        <a href="./Alfajores_Individuales.html">
+                            <img src="./img/Productos/AlfajorClasico.png" 
+                            alt="Alfajor Clasico">
+                        </a>
+                    </div>
 
+                </article>
 
-            </article>
-
-
-            <article>
-
-
-                <h2>Galletitas</h2>
-
-                <a href="#">
-                    <img src="./img/galletitas.jpg" alt="Galletitas">
-                </a>
-
-
-            </article>
-
-
-            <article>
-                <h2>Alfajores Clasico</h2>
-
-                <div>
-                    <a href="./Alfajores_Individuales.html">
-                        <img src="./img/chocolate.png" alt="Alfajores Individuales">
-                    </a>
-
-            </article>
+            </div>
 
 
 
         </section>
     </main>
 
+    <section class="Promocion">
+        <h2>Promociones</h2>
+
+        <ul>
+            <li>
+                <article>
+                    <strong>¡Oferta Especial!</strong>
+                    <img src="./img/Promociones/promocionMosee.png">
+                    <p>2x1 en Caja de Mini Alfajores de sabor a Mosee</p>
+                    <p>Valido Hasta el <time datetime="2024-05-15">15 de mayo de 2024</time>.</p>
+                </article>
+            </li>
+
+            <li>
+                <article>
+                    <strong>¡Oferta Especial!</strong>
+                    <img src="./img/Promociones/promoAlfajoresChocolate.jpg">
+                    <p>3x1 en Caja de Mini Alfajores de Dulce de leche</p>
+                    <p>Valido Hasta el <time datetime="2024-05-20">20 de mayo de 2024</time>.</p>
+                </article>
+            </li>
+        </ul>
+       
+        
+    </section>
+
+    
 
 
-    <footer style="background-color: lightpink; text-align: center;">
+    <footer>
         <div>
-            <a href="mailto:juanpablo@gmail.com?subject=Contacto"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://twitter.com" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
-            <a href="https://instagram.com" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:jorgitoAlfajores@gmail.com?subject=Contacto"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://twitter.com/JorgitoAlfajor_" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/jorgito_alfajor/?hl=es" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
         </div>
 
         <p>Derechos Reservados</p>

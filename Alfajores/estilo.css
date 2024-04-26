@@ -1,18 +1,17 @@
 
-footer
+header,footer
 {
-    background-color: orange;
-    text-align: center;
-}
-
-header
-{
-    background-color: aqua;
+    background-color: lightpink;
     text-align: center;
 }
 
 h1{
     /* text-align: center; */
+}
+
+.LogoPrincipal
+{
+    width:"300";
 }
 .Logo img
 {
@@ -24,10 +23,40 @@ h1{
     width: 150px;
 }
 
+.contenedor{
+    display: flex;
+}
+
+.contenedorImagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1{
+
+    width: 150px;
+    padding: 35px;
+    margin-left: 400px;
+}
+
+#VideoHistoria 
+{
+    text-align: center;
+    
+}
+
+.div2{
+
+    width: 150px;
+    padding: 35px;
+    margin-left: 25px;
+}
+
 article img
 {
     width: 250px;
-    border-collapse:collapse ;
+    border-collapse:collapse;
 }
 
 table,td,th
