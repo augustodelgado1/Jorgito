@@ -100,4 +100,5 @@ Con esto su rama remota ya tiene todo actualizado. ahora falta enviar esto a la 
 
 Este ultimo paso se hace desde la web de github. se van a su rama y les va a aparecer un cartel
 amarillo con un boton verde que indica "Crear Pull Request" (pr)
-si les indica que es posible mergear la rama le dan si a todo y listo, de lo contrario, ponganse a rezar.
+Si el mensaje no aparecio busquen en el nav "Pull Request" y creenlo desde ahí.
+Si les indica que es posible mergear la rama le dan si a todo y listo, de lo contrario, ponganse a rezar.
