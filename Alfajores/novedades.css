@@ -1,0 +1,62 @@
+footer {
+  background-color: lightpink;
+  text-align: center;
+}
+
+header {
+  background-color: lightpink;
+  text-align: center;
+}
+
+section {
+  text-align: center;
+}
+
+.promocionesContainer {
+  margin: 50px;
+}
+
+.promocionesContainer ul {
+  display: flex;
+  padding: 0;
+  justify-content: space-evenly;
+}
+
+.promocionesContainer li {
+  width: 380px;
+  border: 2px solid black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin: 5px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.promocionesContainer li:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-color: lightpink;
+  transition: 0.2s;
+}
+
+#tituloPromo {
+  font-size: 22px;
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promocionesContainer .texto {
+  text-align: center;
+  margin: 20px;
+}
+
+.promocionesContainer img {
+  width: 250px;
+  max-height: 380px;
+}
