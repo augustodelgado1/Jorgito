@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Novedades</title>
     <link rel="stylesheet" href="./novedades.css" />
+    <link rel="stylesheet" href="./estilo.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -16,85 +17,95 @@
     <!-- <link rel="icon" href="logocss.ico"> -->
   </head>
   <body>
-    <header>
-      <img src="img\Jorgito.PNG" alt="centered image" width="300" />
-      <h1 style="font-family: 'Courier New', Courier, monospace">
-        Alfajores Jorgito
-      </h1>
+    <header class="Principal">
 
-      <nav>
-        <a href="./index.html" style="font-size: 18px">INICIO</a
-        >&nbsp;&nbsp;&nbsp;
-        <a href="./nosotros.html" style="font-size: 18px">NOSOTROS</a
-        >&nbsp;&nbsp;&nbsp;
-        <a href="./login.html" style="font-size: 18px">CONTACTO</a
-        >&nbsp;&nbsp;&nbsp;
-        <a href="./productos.html" style="font-size: 18px">PRODUCTOS</a
-        >&nbsp;&nbsp;&nbsp;
-        <a href="./sucursales.html" style="font-size: 18px">SUCURSALES</a
-        >&nbsp;&nbsp;&nbsp;
-        <a href="./noticias.html" style="font-size: 18px">NOTICIAS</a
-        >&nbsp;&nbsp;&nbsp;
-        <a href="./novedades.html" style="font-size: 18px">NOVEDADES</a
-        >&nbsp;&nbsp;&nbsp;
-      </nav>
+      <div class="LogoPrincipal">
+        <img src="img/Logo/Jorgito.png" alt="Logo" width="300">
+      </div>
+      
+
+      <h1>Alfajores Jorgito</h1>
+        <nav>
+            <ul class="Menu">
+                <li>
+                    <a href="./index.html" >INICIO</a>
+                </li>
+                
+                <li>
+                    <a href="./nosotros.html" >NOSOTROS</a>
+                </li>
+
+                <li>
+                    <a href="./login.html">CONTACTO</a>
+                </li>
+
+                <li>
+                    <a href="./productos.html" >PRODUCTOS</a>
+                </li>
+
+                <li>
+                    <a href="./novedades.html" >NOVEDADES</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <section>
       <h2>Nuestras Promociones!</h2>
 
       <div class="promocionesContainer">
-        <ul>
-          <li class="promo">
-            <div id="tituloPromo">
-              <strong>¡ Pack 15% de Descuento !</strong>
-              <strong> Llevando 2 Unidades</strong>
-            </div>
-            <img src="./img/promocion.png" />
-            <div>
-              <div class="texto">
-                <p>15% de Descuento Llevando 2 o mas Unidades del Total</p>
-                <strong style="font-size: 14px">
-                  Valido Hasta el
-                  <time datetime="2024-05-15">22 de mayo de 2024</time>.
-                </strong>
-              </div>
-            </div>
-          </li>
+        
+          <article class="promo" title="15% Descuento en Caja de Alfajores con sabor a Mousee">
+                <div id="tituloPromo">
+                  <strong>¡ Pack 15% de Descuento !</strong>
+                  <strong> Llevando 2 Unidades</strong>
+                </div>
+                <img src="./img/Promociones/promocionMosee.png"  alt="Caja de Alfajores con sabor a Mousee"/>
+                <div>
+                  <div class="texto">
+                    <p>15% de Descuento Llevando 2 o mas Unidades del Total</p>
+                    <strong >
+                      Valido Hasta el
+                      <time datetime="2024-05-22">22 de mayo de 2024</time>.
+                    </strong>
+                  </div>
+                </div>
+            </article>
+         
 
-          <li class="promo">
-            <div id="tituloPromo">
-              <strong>¡ 3x2 en Alfajores Chiquitos !</strong>
-            </div>
-            <img src="./img/img_promo2.jpg" />
-            <div>
-              <div class="texto">
-                <p>Pagas 2 Unidades y te Llevas 3 en Alfajores Chiquitos</p>
-                <strong style="font-size: 14px">
-                  Valido Hasta el
-                  <time datetime="2024-05-15">22 de mayo de 2024</time>.
-                </strong>
+          
+            <article class="promo" title="3x2 en Caja de Alfajores con sabor a Dulce de Leche">
+              <div id="tituloPromo">
+                <strong>¡ 3x2 en Alfajores Chiquitos !</strong>
               </div>
-            </div>
-          </li>
-
-          <li class="promo">
+              <img src="./img/Promociones/promoAlfajoresChocolate.jpg"  alt="Caja de Alfajores con sabor a Dulce de Leche"/>
+              <div>
+                <div class="texto">
+                  <p>Pagas 2 Unidades y te Llevas 3 en Alfajores Chiquitos</p>
+                  <strong >
+                    Valido Hasta el
+                    <time datetime="2024-05-22">22 de mayo de 2024</time>.
+                  </strong>
+                </div>
+              </div>
+            </article>
+  
+            <article class="promo" title="Promo 20% Galletitas + Alfajor Clasico">
             <div id="tituloPromo">
               <strong>¡ Pack 20% de Descuento ! </strong
               ><strong>Galletitas + Alfajor Clasico</strong>
             </div>
-            <img src="./img/20descuento.png" />
+            <img src="./img/Promociones/20descuento.png" alt="Promo 20% Galletitas + Alfajor Clasico"/>
             <div>
               <div class="texto">
                 <p>20% de Descuento Llevando Galletitas y Alfajor Clasico</p>
-                <strong style="font-size: 14px">
+                <strong>
                   Valido Hasta el
                   <time datetime="2024-05-15">15 de mayo de 2024</time>.
                 </strong>
               </div>
             </div>
-          </li>
-        </ul>
+          </article>
       </div>
     </section>
 
@@ -102,12 +113,12 @@
       <h2>Nuevos Productos!</h2>
 
       <div class="promocionesContainer">
-        <ul>
-          <li class="promo">
+        
+          <article class="promo" title="Conitos de Chocolate">
             <div id="tituloPromo">
               <strong>¡ Nuevos Conitos !</strong>
             </div>
-            <img src="./img/conitos.webp" />
+            <img src="./img/Productos/conitos.webp" alt="Nuevo Producto Conitos"/>
             <div>
               <div class="texto">
                 <p>
@@ -118,13 +129,14 @@
                 </p>
               </div>
             </div>
-          </li>
+            </article>
+        
 
-          <li class="promo">
+          <article class="promo"  title="Bizcochitos">
             <div id="tituloPromo">
               <strong>¡ Nuevos Bizcochitos !</strong>
             </div>
-            <img src="./img/bizcochitos.webp" />
+            <img src="./img/Productos/bizcochitos.webp" alt="Nuevo Producto Bizcochitos"/>
             <div>
               <div class="texto">
                 <p>
@@ -134,23 +146,31 @@
                 </p>
               </div>
             </div>
-          </li>
-        </ul>
+          </article>
       </div>
     </section>
+
+
     <footer>
-      <div>
-        <a href="mailto:juanpablo@gmail.com?subject=Contacto"
-          ><i class="fa-solid fa-envelope"></i
-        ></a>
-        <a href="https://twitter.com" target="_blank">
-          <i class="fa-brands fa-twitter"></i
-        ></a>
-        <a href="https://instagram.com" target="_blank">
-          <i class="fa-brands fa-instagram"></i
-        ></a>
-      </div>
-      <p>Derechos Reservados</p>
+
+      <ul class="FooterRedes">
+        <li>
+            <a href="mailto:jorgitoAlfajores@gmail.com?subject=Contacto"><i class="fa-solid fa-envelope"></i></a>
+        </li>
+
+        <li>
+            <a href="https://twitter.com/JorgitoAlfajor_" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
+        </li>
+        
+        <li>
+            <a href="https://www.instagram.com/jorgito_alfajor/?hl=es" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+        </li>
+    </ul>
+
+    <div class="FooterDerechos">
+        <p>Derechos Reservados</p>
+    </div>
+
     </footer>
   </body>
 </html>
