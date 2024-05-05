@@ -1,0 +1,84 @@
+body {
+    margin: 0; /*elimina los margenes de la pantalla*/
+}
+html{
+    margin: 0px !important; /*elimina los margenes, !important hace que sobreescriba cualquier otro estilo*/
+}
+.container {
+    margin: 0;
+    left: 0; /*indica que se posicionará del lado izquierdo del elemento padre*/
+    position: absolute; /*pocisionamiento usado de manera similar a fixed para funcionar fuera de los espacios de elementos*/
+    height: 100%; /*ajusta el tamaño vertical al maximo que le permita el elemento padre o la pantalla*/
+    width: 100%; /*ajusta el tamaño horizontal al maximo que le permita el elemento padre o la pantalla*/
+    z-index: -1; /*indica el pocisionamiento sobre el eje z (superpocision de objetos)*/
+}
+.bg-container{
+    position: fixed; /*pocisionamiento usado de manera similar a absolute para funcionar fuera de los espacios de elementos*/
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://clickandfoods.com/cdn/shop/products/CRI04449_cb1d8369-013b-43a4-a4ce-afaa65d068ac_1200x1200.jpg?v=1598728860');
+    background-size: cover; /*indica que la imagen de fondo debe cubrir el maximo de aera posible del elemento padre*/
+    background-position: center bottom; /*indica que porción de la imagen se mostrará en el centro*/
+    opacity: 0.3; /*puede ser usado para dar efectos de filtro*/
+    backdrop-filter: blur(5px) rgba(255, 192, 203, 0.7) !important; /*efecto de filtro*/
+}
+.pink-overlay{
+    position: fixed;
+    top: 0; /*indica que se posicionará del lado superior del elemento padre*/
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 185, 236, 0.4); /* color rgba + opacidad*/
+}
+.nav{
+    font-size: 18px; /*indica el tamaño de letra, tambien aplica a el tamaño natural de los elementos hijos*/
+    height: 50px;
+    display: flex; /*flex se utiliza para que los elementos se comporten de manera dinamica*/
+    justify-content: end; /*indica que los elementos hijos se pocisionaran a la derecha*/
+    align-items: center; /*centra verticalmente los elementos hijos, necesita del uso de flex*/
+    padding-right: 15px; /* a diferencia del margin, este actua sobre el pocisionamiento de los elementos hijos*/
+}
+.nav-item{
+    text-decoration: none; /*elimina el subrayado y color azul/rojo de los hipervinculos*/
+}
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: end !important; /*indica que los textos se pocisionaran a la derecha*/
+    background-color: #F0F8FF !important;
+    height: 50px;
+    box-shadow: 0 0 150px 4px black; /*da efecto de sombra sobe el box del elemento*/
+    position: fixed;
+}
+.logo{
+    width:140px;
+    position: absolute;
+    left: 10px;
+    top: -45px;
+}
+
+
+.section1{
+    margin-top: 55px;
+}
+
+.box{
+    width: 300px;
+    height: 150px;
+}
+
+.icon{
+    font-size: 40px;
+    color: pink;
+    margin: 10px;
+}
+footer{
+    width: auto;
+    left: 0 !important;
+    background-color: #333;
+    color: #fff; /*afecta a los textos*/
+    padding: 10px;
+}
