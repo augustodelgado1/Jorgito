@@ -1,18 +1,16 @@
-
-footer
-{
-    background-color: lightpink;
-    text-align: center;
+body, html{
+    margin: 0;
 }
 
-header
+
+.Principal,footer
 {
     background-color: lightpink;
     text-align: center;
 }
 
 h1{
-    /* text-align: center; */
+    font-family: 'Courier New', Courier, monospace"
 }
 .Logo img
 {
@@ -24,35 +22,193 @@ h1{
     width: 150px;
 }
 
-.contenedor{
-    display: flex;
+.FrmDatos
+{
+    width: 100%;
+    list-style-type: none;
+    padding: 5px;
 }
 
-.contenedorImagen{
-    display: flex;
+.FrmDatos li
+{
+    height: 35px;
+}
+
+.FrmDatos .txtAreaMensaje
+{
+    height: 200px;
+}
+
+footer
+{
     justify-content: center;
+    text-align: center;
+}
+.FooterRedes
+{
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.FooterRedes li
+{
+    padding: 5px;
+    height: 0px;
     align-items: center;
 }
 
-.div1{
+.FooterDerechos
+{
+    font-family: fantasy;
+    font-size: 16px;
+}
+
+/* .AlfajorClasico{
 
     width: 150px;
     padding: 35px;
-    margin-left: 400px;
+    margin-left: 120px;
+} */
+
+.Menu li
+{
+    font-size: 20px;
+    display: inline-flex;
+    
 }
 
-.div2{
+.Menu a 
+{
+    padding: 10px;
+}
 
-    width: 150px;
+nav ul
+{
+    width: 100%;
+    list-style-type: none;
+    
+}
+
+
+/* 
+.MiniAlfajores{
+    
     padding: 35px;
-    margin-left: 25px;
+    margin-left: 15px;
 }
 
-article img
+.Galletitas
+{
+    padding: 35px;
+    margin-left: 100px;
+    align-items: center;
+} */
+
+/* 
+#ImgMiniAlfajores img
+{
+    width: 200px;
+    height:  200px;
+}
+
+
+
+
+
+#ImgProductoAlfajorClasico img
 {
     width: 250px;
-    border-collapse:collapse;
+    padding: 20px;
+    height: 250px;
+    justify-content: center;
 }
+
+#ImgProductoGalletitas img
+{
+    width: 350px;
+    height: 250px;
+    padding: 20px;
+ 
+}
+
+#ImgMiniAlfajores img
+{
+    
+    align-content: initial;
+} */
+
+#ImgMiniAlfajores img
+{
+    width: 300px;
+    padding: 10px;
+    height:  250px;
+}
+
+#ImgProductoAlfajorClasico img,
+#ImgProductoGalletitas img,
+#ImgMiniAlfajores img
+{
+    padding: 10px;
+    align-content: end;
+    margin-left: 10px;
+    width: 250px;
+    height:  200px;
+}
+
+/* #ImgMiniAlfajores img
+{
+    width: 250px;
+    height:  250px;
+}
+
+#ImgProductoAlfajorClasico img
+{
+    width: 200px;
+    height:  250px;
+}
+*/
+
+#ImgProductoGalletitas img
+{
+    width: 300px;
+    height:  200px;
+  
+} 
+
+#titleProductoAlfajorClasico,
+#titleProductoGalletitas,
+#titleProductoMiniAlfajores 
+{
+    width: 200px;
+    text-align: right;
+    align-items: start;
+    font-size: 16px;
+    padding: 10px;
+    font-family: fantasy;
+    margin: 15px;
+}
+
+
+
+.contenedorProductos{
+    display: flex;
+    padding: 0;
+    justify-content: space-evenly;
+   
+}
+
+
+
+
+.Producto article:hover
+{
+    background-color: chocolate;
+}
+
+
+
+
+
 
 table,td,th
 {
@@ -67,6 +223,7 @@ table,td,th
 
    /* son los dos exactamente lo mismo */
 }
+
 
 td,th{
     text-align: center;

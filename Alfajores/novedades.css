@@ -1,12 +1,4 @@
-footer {
-  background-color: lightpink;
-  text-align: center;
-}
 
-header {
-  background-color: lightpink;
-  text-align: center;
-}
 
 section {
   text-align: center;
@@ -16,27 +8,31 @@ section {
   margin: 50px;
 }
 
-.promocionesContainer ul {
-  display: flex;
+.promocionesContainer article {
   padding: 0;
   justify-content: space-evenly;
 }
 
-.promocionesContainer li {
+.promocionesContainer article 
+{
   width: 380px;
   border: 2px solid black;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   margin: 5px;
   border-radius: 20px;
-  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  display: inline-flex;
   transition: 0.3s;
 }
 
-.promocionesContainer li:hover {
+.texto strong
+{
+  font-size: 14px;
+}
+
+.promocionesContainer article:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   border-color: lightpink;

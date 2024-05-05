@@ -14,21 +14,42 @@
 </head>
 
 <body>
-    <header style="background-color: lightpink ; text-align: center">
+    <header class="Principal">
 
-        <center><img src="img/Jorgito.png" alt="centered image" width="300"></center>
+        <div class="LogoPrincipal">
+            <img src="img/Logo/Jorgito.png" alt="Logo" width="300">
+        </div>
+
 
         <h1>Alfajores Jorgito</h1>
+        
         <nav>
-            <a href="./index.html" style="font-size: 18px;">INICIO</a>&nbsp;&nbsp;&nbsp;
-            <a href="./nosotros.html" style="font-size: 18px;">NOSOTROS</a>&nbsp;&nbsp;&nbsp;
-            <a href="./login.html" style="font-size: 18px;">CONTACTO</a>&nbsp;&nbsp;&nbsp;
-            <a href="./productos.html" style="font-size: 18px;">PRODUCTOS</a>&nbsp;&nbsp;&nbsp;
-            <a href="./sucursales.html" style="font-size: 18px;">SUCURSALES</a>&nbsp;&nbsp;&nbsp;
-            <a href="./noticias.html" style="font-size: 18px;">NOTICIAS</a>&nbsp;&nbsp;&nbsp;
+            <ul class="Menu">
+                <li>
+                    <a href="./index.html" >INICIO</a>
+                </li>
+                
+                <li>
+                    <a href="./nosotros.html" >NOSOTROS</a>
+                </li>
+
+                <li>
+                    <a href="./login.html">CONTACTO</a>
+                </li>
+
+                <li>
+                    <a href="./productos.html" >PRODUCTOS</a>
+                </li>
+
+                <li>
+                    <a href="./novedades.html" >NOVEDADES</a>
+                </li>
+            </ul>
         </nav>
+
     </header>
-    <section>
+
+    <section id="Sucursales">
 
         <h2>Visitanos en Nuestras Sucursales</h2>
     
@@ -54,60 +75,84 @@
         <h2>Contacte Con Nosotros</h2>
     
         <form method="post">
-    
-            <label for="txtNombre">Nombre</label>
-            <input type="text" id="txtNombre" required>
-            <br><br>
-            <label for="txtEmail">Email</label>
-            <input type="email" id="txtEmail" name="Email" required>
-            <br><br>
-            <label for="txtDni">Dni</label>
-            <input type="number" id="txtDni" required min="10000000"  max="99999999">
-            <br><br>
-    
-            <label for="txtFechaDeNacimiento">Fecha De Nacimieto</label>
-            <input type="date" id="txtFechaDeNacimiento" required >
-            <br><br>
-    
-            <label for="cmbNacionalidad">Nacionalidad</label>
+
+        <ul class="FrmDatos">
+            <li>
+                <label for="txtNombre">Nombre</label>
+                <input type="text" id="txtNombre" required>
+            </li>
+
+            <li>
+                <label for="txtEmail">Email</label>
+                <input type="email" id="txtEmail" name="Email" required>
+            </li>
+
+            <li>
+                <label for="txtDni">Dni</label>
+                <input type="number" id="txtDni" required min="10000000"  max="99999999">
+            </li>
+
+            <li>
+                <label for="txtFechaDeNacimiento">Fecha De Nacimieto</label>
+                <input type="date" id="txtFechaDeNacimiento" required >
+            </li>
+
+            <li>
+                <label for="cmbNacionalidad">Nacionalidad</label>
                 <select id="cmbNacionalidad">
                     <option>Argentina</option>
                     <option>Peru</option>
                     <option>Mexico</option>
                     <option>Brasil</option>
                 </select>
-                
-            <br><br>
-            
-            <textarea name="" id="" cols="180" rows="12" placeholder="Mensaje"></textarea>
-            <br><br>
+            </li>
+
+            <li class="txtAreaMensaje">
+                <textarea name="" id="" cols="180" rows="12" placeholder="Mensaje"></textarea>
+            </li>
+    
+        </ul>
+
+          <div>
             <input type="submit">
             <input type="reset" value="Restablecer">
+          </div>
         </form>
     
     </section>
     
     
-    <section>
+    <!-- <section>
         <h2 style="text-align: left;">Redes</h2>
     
         <div class="Redes">
-            <a href="https://twitter.com" target="_blank"> <img src="img/twitter.png" ></a>
-            <a href="https://instagram.com" target="_blank"> <img src="img/instagram.png"></a>
-            <a href="mailto:juanpablo@gmail.com?subject=Contacto"><img src="img/sobre.png"></a>
+            <a href="https://twitter.com/JorgitoAlfajor_" target="_blank"> <img src="img/Redes/twitter.png" ></a>
+            <a href="https://www.instagram.com/jorgito_alfajor/?hl=es" target="_blank"><img src="img/Redes/instagram.png"></a>
+            <a href="mailto:jorgitoAlfajores@gmail.com?subject=Contacto"><img src="img/Redes/sobre.png"></a>
         </div>
     
-    </section>
+    </section> -->
 
 
 </body>
 <footer>
-    <div >
-        <a href="mailto:juanpablo@gmail.com?subject=Contacto"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://twitter.com" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
-        <a href="https://instagram.com" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+    <ul class="FooterRedes">
+        <li>
+            <a href="mailto:jorgitoAlfajores@gmail.com?subject=Contacto"><i class="fa-solid fa-envelope"></i></a>
+        </li>
+
+        <li>
+            <a href="https://twitter.com/JorgitoAlfajor_" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
+        </li>
+        
+        <li>
+            <a href="https://www.instagram.com/jorgito_alfajor/?hl=es" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+        </li>
+    </ul>
+
+    <div class="FooterDerechos">
+        <p>Derechos Reservados</p>
     </div>
-    <p>Derechos Reservados</p>
 </footer>
 
 </html>
